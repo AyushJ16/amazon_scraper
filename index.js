@@ -5,7 +5,7 @@ require('dotenv').config();
 const app = express();
 const PORT=process.env.PORT || 3000;
 
-const generateScrapperUrl =(apiKey)=>{
+const generateScrapperUrl =(api_key)=>{
     return `http://api.scraperapi.com?api_key=${api_key}&autoparse=true`;
 }
 
